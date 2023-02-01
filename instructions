@@ -1,0 +1,13 @@
+
+### VM:
+
+sudo chmod +x install.sh
+sudo ./install.sh sudo chmod +x install.sh sudo ./install.sh
+
+### add /etc/xrdp/xrdp.ini
+port=vsock://-1:3389
+use_vsock=false
+
+### Windows.
+
+Set-VM -VMName {nameVM} -EnhancedSessionTransportType HvSocket
